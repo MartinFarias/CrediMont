@@ -1,0 +1,235 @@
+$celesteClaro: #a5b9e7;
+$azulOscuro: #1b2a4e;
+$negro: #232328;
+$gris:  #454545;
+$blanco: white;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@media (max-width: 576px) {
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }}
+header {
+    background-color: $celesteClaro;
+    body.dark &{
+        background-color: $negro;
+    }}
+
+    .wrap{
+        margin-top: 3%;
+        height: 120px;
+        width: 120px;
+              
+    }
+    .widget {
+        width: 40%;
+        margin: 2em;
+        }
+
+.widget p {
+    display: inline-block;
+    line-height: 1em;
+}
+
+    .reloj {
+        color: $blanco;
+        font-size: 1.5em;
+        font-family: Oswald, Arial;
+        text-align: center;
+        margin-bottom: 0.3125rem;
+        background: $azulOscuro;
+        padding: 0;
+        width: 100%;
+
+
+
+        /*font-size: 1rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        color: #d6d5d5;
+        text-align: center;
+        position: relative;
+        display: flex;
+        top: 0;
+        left: 0;
+        right: unset;
+      */}
+
+      .calendario {
+        color: $blanco;
+        font-size: 1.2em;
+        font-family: Oswald, Arial;
+        text-align: center;
+        margin-bottom: 0.3125rem;
+        background: $azulOscuro;
+        padding: 0;
+        width: 100%;
+
+/*
+        color: #d6d5d5;
+        text-align: center;
+        position: relative;
+        display: flex;
+        top: 0;
+        left: 0;
+        right: unset;*/
+      }
+     .precioDolar {
+        color: $blanco;
+     }
+    
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $celesteClaro;
+    transition: .3s ease all;
+    &.dark {
+        background: $negro;
+        background-color: $negro;
+    color: $blanco;
+    }}
+.card {
+    background-color: $celesteClaro ;
+}
+.dark .card {
+    background: $negro;
+    background-color: $negro;
+}
+.dark .card-title {
+    color: $blanco;
+}
+.accordion-button {
+    background-color: $celesteClaro;
+}
+.dark .accordion-body {
+    background-color: $gris;
+    color: $blanco;
+}
+.dark .accordion-button{
+    background-color: $blanco;
+    background: $gris;
+    color: $blanco;
+}
+
+#menu {
+    body.dark & {
+        background: $gris;
+        a { 
+            color: $blanco;
+            &:hover {
+                color: $negro
+            }}}}
+nav {
+    background-color: $azulOscuro;
+}
+.carousel-inner {
+    background-color: $celesteClaro;
+    body.dark &{
+        color: $blanco;
+        background-color:  $negro;
+    }}
+#menu li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: $blanco;
+}
+#menu button {
+    font-size: 18px;
+    font-weight: bold;
+}
+div ul li {
+    border-right-style: solid;
+    border-right-color: rgba(27, 90, 92, 0.795);
+}
+@media (max-width: 768px) {
+    #intro { width: 90% !important;}
+    .servicio-fila {
+        width: 100% !important;
+        text-align: center;
+    }}
+footer{
+    background: #1b2a4e;
+    min-height: 100px;
+    margin-top: auto;
+}
+footer p{
+color: #f9f9f9;
+text-align: center;
+}
+#iconos i {
+    font-size: 26px;
+    padding: 0 8px;
+    color: #f3f3f3;
+}
+.card-title {
+font-size: xx-large;
+color: #255cde;
+}
+.accordion-body{
+    background-color: #7597e4;
+}
+
+.switch {
+    background: #f5820f;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    &::after {
+        content:"";
+        display: block;
+        width: 33px;
+        height: 33px;
+        position: absolute;
+        background: #454545;
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 100px;
+        transition: .3s ease all;
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+          }
+          &.active {
+            background: orange; 
+            color: #000;
+            &::after {
+                right: 0;
+                left: unset;
+            }
+        }
+          span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        background: none;
+        color: #060606;
+    }}
+
+.cambioDelDia {
+    color: $blanco;
+    font-size: 1rem;
+    font-family: Oswald, Arial;
+    text-align: start;
+    background: $blanco;
+    width: 100%;
+}
+
+
+#taza {
+    color: $blanco;
+    font-size: 1rem;
+
+}
+
+.cambio {
+    color: $blanco;
+}
